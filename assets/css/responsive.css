@@ -1,0 +1,59 @@
+@media (max-width: 576px) {
+  .hero .banner_img_right {
+    display: none;
+  }
+
+  .location_tab .text {
+    width: unset;
+  }
+
+  .hero .hero_text h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .about {
+    padding-top: 5rem;
+  }
+
+  .location_tab {
+    padding: 2rem;
+  }
+
+  .featured_foods .image_slider_div .single img {
+    width: 100%;
+    height: 35rem;
+  }
+
+  .news_and_media .header_section {
+    width: 100%;
+  }
+
+  .footer {
+    height: 80vh;
+  }
+
+  .footer .top .footer_menu {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .featured_foods .image_slider_div .single img {
+    width: 100%;
+    height: 35rem;
+  }
+
+  .footer {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

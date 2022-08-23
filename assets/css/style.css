@@ -1,0 +1,339 @@
+/*  ===================================== Common ===================================== */
+
+.section_tag_line {
+  font-size: 3rem;
+  font-family: Branch-regular;
+}
+
+.section_header {
+  font-size: 3rem;
+  font-family: Branch-regular;
+  color: var(--main-color);
+}
+
+.section_link {
+  font-size: 1.5rem;
+  font-family: Poppins-regular;
+  color: var(--main-color);
+}
+
+.text {
+  font-family: Poppins-regular;
+  font-size: 1.5rem;
+}
+
+.btn-explore {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+}
+
+.btn-explore:hover {
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 0;
+  font-size: 1.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: unset;
+  font-size: 1.3rem;
+}
+/*  ===================================== Common ends ===================================== */
+
+/*  ===================================== Loader ===================================== */
+.loader {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1111;
+  background: #fff;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  ===================================== Loader ends ===================================== */
+
+/* =================================== Banner ================================= */
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero .banner_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-nav {
+  font-family: Branch-regular;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.main-nav .nav-item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.main-nav .nav-link {
+  color: #111;
+  font-size: 1.5rem;
+}
+
+.hero .hero_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero_text h1 {
+  color: #fff;
+  font-size: 6rem;
+  width: 65%;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Branch-regular;
+}
+
+.hero .banner_img_right {
+  position: absolute;
+  right: 0rem;
+  bottom: -10rem;
+  width: 20rem;
+}
+/*  ===================================== Banner ends ===================================== */
+
+/*  ===================================== About ===================================== */
+.about {
+  background-image: url(../img/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+/*  ===================================== About ends ===================================== */
+
+/*  ===================================== Location ===================================== */
+.location {
+  padding-top: 0rem;
+  padding-bottom: 10rem;
+}
+
+.location_header {
+  font-size: 3rem;
+}
+
+.location_tab {
+  font-family: Branch-regular;
+  background-image: url(../img/location.png);
+  padding: 4rem;
+}
+
+.location_tab .text {
+  font-size: 1.3rem;
+  color: #fff;
+  width: 40rem;
+}
+
+.location_tab .location_title {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.location_tab .nav-link {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.location_tab .nav-link.active {
+  background: transparent;
+  color: #fff;
+  font-size: 2.5rem;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+/*  ===================================== Location ends ===================================== */
+
+/*  ===================================== Featured foods ===================================== */
+.featured_foods .image_slider_div .single {
+  position: relative;
+}
+
+.featured_foods .image_slider_div .single img {
+  width: 27rem;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.featured_foods .image_slider_div .single .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+}
+
+.featured_foods .image_slider_div .single .description .header {
+  font-size: 2.5rem;
+  font-family: Branch-regular;
+  color: #fff;
+}
+
+.featured_foods .image_slider_div .single .description .sub_header {
+  font-size: 1.2rem;
+  font-family: Poppins-regular;
+  color: #fff;
+}
+/*  ===================================== Featired foods ends ===================================== */
+
+/*  ===================================== News and media ===================================== */
+.news_and_media .header_section {
+  padding-top: 10rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.news_and_media .header_section p {
+  font-size: 1.3rem;
+  font-family: Poppins-regular;
+}
+
+.news_and_media .news_single {
+  position: relative;
+}
+
+.news_and_media .news_single .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+}
+
+.news_and_media .news_single .description .title {
+  font-size: 2.5rem;
+  font-family: Branch-regular;
+  color: #fff;
+}
+
+.news_and_media .news_single .description .small_desc {
+  font-size: 1.2rem;
+  font-family: Poppins-regular;
+  color: #fff;
+}
+
+.news_and_media .news_single .description .link {
+  font-size: 1.4rem;
+  font-family: Branch-regular;
+  color: #fff;
+  text-decoration: none;
+}
+
+.news_and_media .news_single .thumbnail {
+  width: 100%;
+  height: 480;
+  object-fit: cover;
+}
+/*  ===================================== News and media ends ===================================== */
+
+/*  ===================================== Footer ===================================== */
+.footer {
+  padding: 3rem;
+  padding-top: 6rem;
+  background-image: url(../img/footer.png);
+  height: 100vh;
+}
+
+.footer .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .top .footer_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 2rem 0;
+}
+
+.footer .top .footer_menu .menu-item {
+  margin: 0 2rem;
+}
+
+.footer .top .footer_menu .menu-item a {
+  text-decoration: none;
+  color: #111;
+  font-family: Branch-regular;
+  font-size: 1.5rem;
+}
+
+.footer .top .footer_socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .top .footer_socials .social {
+  border: 1px solid #111;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 2rem;
+}
+
+.footer .top .footer_socials .social a {
+  color: #111;
+}
+
+.footer .top .footer_socials .social:hover {
+  background-color: #111;
+}
+
+.footer .top .footer_socials .social:hover a {
+  color: #fff;
+}
+/*  ===================================== Footer ends ===================================== */
+
+/*  ===================================== Floating whatsapp ===================================== */
+.floating {
+  position: fixed;
+  bottom: 15rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+.floating a img {
+  width: 5rem;
+}
+/*  ===================================== Floating whatsapp ends ===================================== */
