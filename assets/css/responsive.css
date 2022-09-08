@@ -16,8 +16,13 @@
     padding-top: 5rem;
   }
 
+  .location{
+    padding-bottom: 5rem;
+  }
+
   .location_tab {
     padding: 2rem;
+    height: unset;
   }
 
   .featured_foods .image_slider_div .single img {

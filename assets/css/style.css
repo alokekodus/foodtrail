@@ -148,13 +148,16 @@
 .location_tab {
   font-family: Branch-regular;
   background-image: url(../img/location.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 4rem;
+  height: 400px;
 }
 
 .location_tab .text {
   font-size: 1.3rem;
   color: #fff;
-  width: 40rem;
+  width: 50rem;
 }
 
 .location_tab .location_title {

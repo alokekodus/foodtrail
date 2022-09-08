@@ -1,421 +1,488 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Food Trail</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap5/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap5/css/bootstrap.min.css"
+    />
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="./assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="./assets/vendor/animate/animate.css" />
     <!-- Swiper 8 CSS -->
-    <link rel="stylesheet" href="./assets/vendor/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper.css" />
     <!-- Fontawesome 6 CSS -->
     <!-- <link rel="stylesheet" href="./assets/vendor/fontawesome/fontawesome.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<body>
+  <body>
     <!--PreLoader-->
     <div class="loader">
-        <img src="./assets/img/loading.svg" alt="">
+      <img src="./assets/img/loading.svg" alt="" />
     </div>
     <!--PreLoader Ends-->
 
     <!-- Hero -->
     <section class="hero">
-        <!-- Navbar -->
-        <nav class="navbar main-nav navbar-expand-lg py-4 px-5">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logo2.png" alt="Food trail">
+      <!-- Navbar -->
+      <nav class="navbar main-nav navbar-expand-lg py-4 px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo2.png" alt="Food trail" />
+          </a>
+          <button
+            class="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locations
                 </a>
-                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Locations
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Manas National Park</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News & Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Banner -->
-        <img class="banner_img" src="./assets/img/banner.png" alt="Banner">
-
-        <!-- Side image -->
-        <img class="banner_img_right" src="./assets/img/banner2.png" alt="Banner">
-
-        <!-- Center text -->
-        <div class="hero_text">
-            <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Unique culinary experiences with
-                culturally
-                rich communities</h1>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Manas National Park</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News & Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <!-- Banner -->
+      <img class="banner_img" src="./assets/img/banner.png" alt="Banner" />
+
+      <!-- Side image -->
+      <img
+        class="banner_img_right"
+        src="./assets/img/banner2.png"
+        alt="Banner"
+      />
+
+      <!-- Center text -->
+      <div class="hero_text">
+        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
+          Unique culinary experiences with culturally rich communities
+        </h1>
+      </div>
     </section>
-
-
-
 
     <!-- About -->
     <section class="about">
-        <div class="container">
-            <h2 class="section_tag_line text-center wow animate__fadeInUp mb-5">"Our culinay tours are the only tours
-                that
-                benefits <br>
-                the local communities while rendering a <br>
-                sustainable travel expeience"</h2>
+      <div class="container">
+        <h2 class="section_tag_line text-center wow animate__fadeInUp mb-5">
+          "Our culinay tours are the only tours that benefits <br />
+          the local communities while rendering a <br />
+          sustainable travel expeience"
+        </h2>
 
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <img src="./assets/img/about1.png" class="w-100" alt="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <img src="./assets/img/about2.png" class="w-100 mb-4" alt="">
-                                <img src="./assets/img/about3.png" class="w-100 mb-4" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-lg-6">
-                        <h3 class="section_header wow animate__fadeInUp">
-                            Create Your Journey
-                        </h3>
-
-                        <p class="text wow animate__fadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam
-                            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-                            velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-                            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
-                            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-                            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                            consequat.</p>
-
-                        <a class="section_link wow animate__fadeInUp" href="#">Find more...</a>
-                    </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <img src="./assets/img/about1.png" class="w-100" alt="" />
                 </div>
+
+                <div class="col-md-6">
+                  <img
+                    src="./assets/img/about2.png"
+                    class="w-100 mb-4"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/img/about3.png"
+                    class="w-100 mb-4"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
+
+            <div class="col-md-12 col-lg-6">
+              <h3 class="section_header wow animate__fadeInUp">
+                Create Your Journey
+              </h3>
+
+              <p class="text wow animate__fadeInUp">
+                Food is an inseparable part of our lives and is undoubtedly one
+                of the best ways to get acquainted to a place! We at FSM
+                Foodtrails acknowledge that and offer a premium culinary
+                experience for travellers across the world. These tours are
+                hosted in exquisite yet humble locations of Northeast India
+                which is abound with rich flora &amp; fauna! From sourcing
+                ingredients from the local farms to touring local markets and
+                learning to cook local dishes with the natives, our culinary
+                tours are a wholesome experience for the culture-seeker in every
+                traveller. Our tours make for enriching anecdotes of culture and
+                cuisine for travellers and the natives alike.
+              </p>
+
+              <p class="text wow animate__fadeInUp">
+                Come and be part of our culinary tours, this fall &amp; winter
+                as we bring in a glorious convocation of travel and food in
+                Manas, Assam.
+              </p>
+
+              <a class="section_link wow animate__fadeInUp" href="#"
+                >Find more...</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
 
     <!-- Locations -->
     <section class="location">
-        <div class="container">
-            <div class="location_tab wow animate__fadeInUp">
-                <div class="row">
-                    <div class="col-md-2 mb-5">
-                        <h3 class="text-white mb-5 location_header">Locations</h3>
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <div>
-                                <button class="nav-link active" id="v-pills-manas-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-manas" type="button" role="tab"
-                                    aria-controls="v-pills-manas" aria-selected="true">Manas</button>
-                            </div>
-                            <div>
-                                <button class="nav-link" id="v-pills-kaziranga-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-kaziranga" type="button" role="tab"
-                                    aria-controls="v-pills-kaziranga" aria-selected="false">Kaziranga</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-10 ps-md-5">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-manas" role="tabpanel"
-                                aria-labelledby="v-pills-manas-tab" tabindex="0">
-
-                                <h3 class="location_title">Manas National Park</h3>
-
-                                <p class="text">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                    diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                                    aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                                    accumsan et iusto odio dignissim qui blandit praesent
-                                    luptatum zzril delenit augue duis dolore te feugait nulla
-                                    facilisi.
-                                </p>
-
-                                <button class="btn btn-explore">Explore</button>
-
-                            </div>
-
-                            <div class="tab-pane fade" id="v-pills-kaziranga" role="tabpanel"
-                                aria-labelledby="v-pills-kaziranga-tab" tabindex="0">
-                                <h3 class="location_title">Kaziranga National Park</h3>
-
-                                <p class="text">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                    diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                                    aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                                    accumsan et iusto odio dignissim qui blandit praesent
-                                    luptatum zzril delenit augue duis dolore te feugait nulla
-                                    facilisi.
-                                </p>
-
-                                <button class="btn btn-explore">Explore</button>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="location_tab wow animate__fadeInUp">
+          <div class="row">
+            <div class="col-md-2 mb-5">
+              <h3 class="text-white mb-5 location_header">Locations</h3>
+              <div
+                class="nav flex-column nav-pills me-3"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <div>
+                  <button
+                    class="nav-link active"
+                    id="v-pills-manas-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-manas"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-manas"
+                    aria-selected="true"
+                  >
+                    Manas
+                  </button>
                 </div>
+                <div>
+                  <button
+                    class="nav-link"
+                    id="v-pills-kaziranga-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-kaziranga"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-kaziranga"
+                    aria-selected="false"
+                  >
+                    Kaziranga
+                  </button>
+                </div>
+              </div>
             </div>
+            <div class="col-md-10 ps-md-5">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-manas"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-manas-tab"
+                  tabindex="0"
+                >
+                  <h3 class="location_title">Manas National Park</h3>
 
+                  <p class="text">
+                    The tours to Manas exhibit the treasure trove of Bodo tribal
+                    culture that encompasses village tours, interactions with
+                    the locals, learning about rare local ingredients, cooking
+                    traditional meals with natives and dining with them.
+                    Travellers can also enjoy local dance performances and the
+                    art of hand-weaving.
+                  </p>
+
+                  <button class="btn btn-explore">Explore</button>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-kaziranga"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-kaziranga-tab"
+                  tabindex="0"
+                >
+                  <h3 class="location_title">Kaziranga National Park</h3>
+
+                  <p class="text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                    iriure dolor in hendrerit in vulputate velit esse molestie
+                    consequat, vel illum dolore eu feugiat nulla facilisis at
+                    vero eros et accumsan et iusto odio dignissim qui blandit
+                    praesent luptatum zzril delenit augue duis dolore te feugait
+                    nulla facilisi.
+                  </p>
+
+                  <button class="btn btn-explore">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
-
 
     <!-- Featured foods -->
     <section class="featured_foods bg-light py-5">
-        <div class="container">
-            <h2 class="section_header wow animate__fadeInUp">Featured foods</h2>
-            <div class="d-flex justify-content-between w-100 wow animate__fadeInUp">
-                <div>
-                    <p class="fw-bold mb-5">EXPLORING THE MEANINGS OF FOOD</p>
-                </div>
-                <span class="custom_pagination"></span>
-            </div>
-
-            <div class="image_slider_div wow animate__fadeInUp" data-wow-delay="0.5s">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="single swiper-slide">
-                            <img src="./assets/img/food1.png" alt="Food">
-                            <div class="description">
-                                <p class="header">Lorem ipsum</p>
-                                <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-
-                        <div class="single swiper-slide">
-                            <img src="./assets/img/food1.png" alt="Food">
-                            <div class="description">
-                                <p class="header">Lorem ipsum</p>
-                                <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-
-                        <div class="single swiper-slide">
-                            <img src="./assets/img/food1.png" alt="Food">
-                            <div class="description">
-                                <p class="header">Lorem ipsum</p>
-                                <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-
-                        <div class="single swiper-slide">
-                            <img src="./assets/img/food1.png" alt="Food">
-                            <div class="description">
-                                <p class="header">Lorem ipsum</p>
-                                <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-
-                        <div class="single swiper-slide">
-                            <img src="./assets/img/food1.png" alt="Food">
-                            <div class="description">
-                                <p class="header">Lorem ipsum</p>
-                                <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section_header wow animate__fadeInUp">Featured foods</h2>
+        <div class="d-flex justify-content-between w-100 wow animate__fadeInUp">
+          <div>
+            <p class="fw-bold mb-5">Cherish a satiating palate over history, culture &amp; cuisine! We are presenting the best
+                of our local cuisines so that travellers can experience Northeast India by taste.</p>
+          </div>
+          <span class="custom_pagination"></span>
         </div>
+
+        <div
+          class="image_slider_div wow animate__fadeInUp"
+          data-wow-delay="0.5s"
+        >
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="single swiper-slide">
+                <img src="./assets/img/food1.png" alt="Food" />
+                <div class="description">
+                  <p class="header">Lorem ipsum</p>
+                  <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+
+              <div class="single swiper-slide">
+                <img src="./assets/img/food1.png" alt="Food" />
+                <div class="description">
+                  <p class="header">Lorem ipsum</p>
+                  <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+
+              <div class="single swiper-slide">
+                <img src="./assets/img/food1.png" alt="Food" />
+                <div class="description">
+                  <p class="header">Lorem ipsum</p>
+                  <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+
+              <div class="single swiper-slide">
+                <img src="./assets/img/food1.png" alt="Food" />
+                <div class="description">
+                  <p class="header">Lorem ipsum</p>
+                  <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+
+              <div class="single swiper-slide">
+                <img src="./assets/img/food1.png" alt="Food" />
+                <div class="description">
+                  <p class="header">Lorem ipsum</p>
+                  <p class="sub_header mb-0">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
 
     <!-- News & Media -->
     <section class="news_and_media pb-5">
-        <div class="container">
-            <div class="header_section wow animate__fadeInUp">
-                <h3 class="section_header text-center">News & Media</h3>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                    euismod tincidunt ut
-                    laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper
-                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-                    hendreri
-                </p>
-            </div>
-
-            <div>
-                <div class="col-md-12 wow animate__fadeInUp" data-wow-delay="0.5s">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="news_single">
-                                <img class="thumbnail" src="./assets/img/news.png" alt="News">
-                                <div class="description">
-                                    <p class="title">Lorem ipsum</p>
-                                    <p class="small_desc mb-3">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.</p>
-
-                                    <a class="link" href="#">Find more...</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="news_single">
-                                <img class="thumbnail" src="./assets/img/news.png" alt="News">
-                                <div class="description">
-                                    <p class="title">Lorem ipsum</p>
-                                    <p class="small_desc mb-3">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.</p>
-
-                                    <a class="link" href="#">Find more...</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="news_single">
-                                <img class="thumbnail" src="./assets/img/news.png" alt="News">
-                                <div class="description">
-                                    <p class="title">Lorem ipsum</p>
-                                    <p class="small_desc mb-3">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore.</p>
-
-                                    <a class="link" href="#">Find more...</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header_section wow animate__fadeInUp">
+          <h3 class="section_header text-center">News & Media</h3>
+          <p class="text-center">
+            By serving travellers from around the globe, FSM Foodtrails is on a
+            mission to pin Northeast India on the Culinary map of the world
+            while supporting indigenous communities with a sustainable
+            livelihood. Our stories have been covered by leading media agencies.
+          </p>
         </div>
+
+        <div>
+          <div class="col-md-12 wow animate__fadeInUp" data-wow-delay="0.5s">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+
+                    <a class="link" href="#">Find more...</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+
+                    <a class="link" href="#">Find more...</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
+
+                    <a class="link" href="#">Find more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
 
     <!-- Footer -->
     <section class="footer text-center wow animate__fadeInUp">
-        <div class="container">
-            <div class="top">
-                <img src="./assets/img/logo3.png" alt="Food trail" width="150">
+      <div class="container">
+        <div class="top">
+          <img src="./assets/img/logo3.png" alt="Food trail" width="150" />
 
-                <!-- Footer menu -->
-                <ul class="footer_menu">
-                    <li class="menu-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">About us</a>
-                    </li>
-                    <li class="menu-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Locations
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Manas National Park</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">News & Media</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Gallery</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+          <!-- Footer menu -->
+          <ul class="footer_menu">
+            <li class="menu-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">About us</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Locations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Manas National Park</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">News & Media</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Gallery</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
 
-                <!-- Socials -->
-                <div class="footer_socials">
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+          <!-- Socials -->
+          <div class="footer_socials">
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
-
-            <div class="bottom">
-                <p>Copyright © 2020. All rights reserved.</p>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
         </div>
+
+        <div class="bottom">
+          <p>Copyright © 2020. All rights reserved.</p>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- Floating whatsapp button -->
     <section class="floating">
-        <a href="#"><img src="./assets/img/whatsapp.png" alt="Whatsapp"></a>
+      <a href="#"><img src="./assets/img/whatsapp.png" alt="Whatsapp" /></a>
     </section>
-
-
-
 
     <!-- JQuery -->
     <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
@@ -429,24 +496,23 @@
     <!-- WOW JS -->
     <script src="./assets/vendor/wow/wow.min.js"></script>
     <script>
-        var wow = new WOW({
-            boxClass: 'wow', // animated element css class (default is wow)
-            animateClass: 'animate__animated', // animation css class (default is animated)
-            offset: 200, // distance to the element when triggering the animation (default is 0)
-            mobile: true, // trigger animations on mobile devices (default is true)
-            live: true, // act on asynchronously loaded content (default is true)
-            callback: function (box) {
-                // the callback is fired every time an animation is started
-                // the argument that is passed in is the DOM node being animated
-            },
-            scrollContainer: null, // optional scroll container selector, otherwise use window,
-            resetAnimation: true, // reset animation on end (default is true)
-        });
-        wow.init();
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animate__animated", // animation css class (default is animated)
+        offset: 200, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null, // optional scroll container selector, otherwise use window,
+        resetAnimation: true, // reset animation on end (default is true)
+      });
+      wow.init();
     </script>
 
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
