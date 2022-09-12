@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Trail</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap5/css/bootstrap.min.css"
+    />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/vendor/animate/animate.css" />
+    <!-- Swiper 8 CSS -->
+    <link rel="stylesheet" href="./assets/vendor/swiper/swiper.css" />
+    <!-- Fontawesome 6 CSS -->
+    <!-- <link rel="stylesheet" href="./assets/vendor/fontawesome/fontawesome.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <style>
+      .hero_header {
+        height: 70vh;
+      }
+
+      .section .section_header {
+        margin-top: 10rem;
+      }
+
+      .hero_center_page {
+        margin-top: 10rem;
+        height: 70vh;
+        width: 100%;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero_center_page p {
+        font-size: 3rem;
+        color: #fff;
+        font-family: Branch-regular;
+        width: 45%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--PreLoader-->
+    <div class="loader">
+      <img src="./assets/img/loading.svg" alt="" />
+    </div>
+    <!--PreLoader Ends-->
+
+    <!-- Hero -->
+    <section class="hero hero_header">
+      <!-- Navbar -->
+      <nav class="navbar main-nav navbar-expand-lg py-4 px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo2.png" alt="Food trail" />
+          </a>
+          <button
+            class="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locations
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Manas National Park</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News & Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <img class="banner_img" src="./assets/img/banner.png" alt="Banner" />
+
+      <!-- Center text -->
+      <div class="hero_text">
+        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
+          About us
+        </h1>
+      </div>
+    </section>
+
+    <section class="section section_about">
+      <div class="container">
+        <div class="col-md-8">
+          <h3 class="section_header wow animate__fadeInUp mb-4">
+            Culinary Tours - A sojourner's keepsake
+          </h3>
+
+          <p class="text wow animate__fadeInUp">
+            Food is an inseparable part of our lives and is undoubtedly one of
+            the best ways to get acquainted to a place! We at FSM Foodtrails
+            acknowledge that and offer a premium culinary experience for
+            travellers across the world. These tours are hosted in exquisite yet
+            humble locations of Northeast India which is abound with rich flora
+            &amp; fauna! From sourcing ingredients from the local farms to
+            touring local markets and learning to cook local dishes with the
+            natives, our culinary tours are a wholesome experience for the
+            culture-seeker in every traveller. Our tours make for enriching
+            anecdotes of culture and cuisine for travellers and the natives
+            alike.
+          </p>
+        </div>
+
+        <!-- Images -->
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero_center_page">
+      <p>
+        Come and be part of our culinary tours, this fall & winter as we bring
+        in a glorious convocation of <b>travel and food in Manas, Assam</b>.
+      </p>
+    </section>
+
+    <section class="founder">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <!-- Founder image -->
+                    <div class="col-md-6"></div>
+
+                    <!-- Founder text -->
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer text-center wow animate__fadeInUp">
+      <div class="container">
+        <div class="top">
+          <img src="./assets/img/logo3.png" alt="Food trail" width="150" />
+
+          <!-- Footer menu -->
+          <ul class="footer_menu">
+            <li class="menu-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="about.html">About us</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Locations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Manas National Park</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#">News & Media</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Gallery</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Socials -->
+          <div class="footer_socials">
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <p>Copyright © 2020. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating whatsapp button -->
+    <section class="floating">
+      <a href="#"><img src="./assets/img/whatsapp.png" alt="Whatsapp" /></a>
+    </section>
+
+    <!-- JQuery -->
+    <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/vendor/bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper 8 JS -->
+    <script src="./assets/vendor/swiper/swiper.js"></script>
+
+    <!-- WOW JS -->
+    <script src="./assets/vendor/wow/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animate__animated", // animation css class (default is animated)
+        offset: 200, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null, // optional scroll container selector, otherwise use window,
+        resetAnimation: true, // reset animation on end (default is true)
+      });
+      wow.init();
+    </script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
