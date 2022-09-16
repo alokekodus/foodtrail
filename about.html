@@ -27,30 +27,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <style>
-      .hero_header {
-        height: 70vh;
-      }
-
-      .section .section_header {
-        margin-top: 10rem;
-      }
-
-      .hero_center_page {
-        margin-top: 10rem;
-        height: 70vh;
-        width: 100%;
-        background-color: #111;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .hero_center_page p {
-        font-size: 3rem;
-        color: #fff;
-        font-family: Branch-regular;
-        width: 45%;
-      }
+      
     </style>
   </head>
 
@@ -83,7 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About us</a>
@@ -119,7 +96,11 @@
       </nav>
 
       <!-- Banner -->
-      <img class="banner_img" src="./assets/img/banner.png" alt="Banner" />
+      <img
+        class="banner_img"
+        src="./assets/img/about_header.jpg"
+        alt="Banner"
+      />
 
       <!-- Center text -->
       <div class="hero_text">
@@ -129,9 +110,12 @@
       </div>
     </section>
 
-    <section class="section section_about">
+    <section
+      class="section section_about"
+      style="background: url(./assets/img/about_background.jpg)"
+    >
       <div class="container">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <h3 class="section_header wow animate__fadeInUp mb-4">
             Culinary Tours - A sojourner's keepsake
           </h3>
@@ -149,40 +133,79 @@
             anecdotes of culture and cuisine for travellers and the natives
             alike.
           </p>
-        </div>
 
-        <!-- Images -->
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+          <!-- Images -->
+          <div class="row mt-5">
+            <div class="col-md-6 col-lg-4 wow animate__fadeInUp section_about_img mb-3">
+              <img src="./assets/img/about_bg_1.jpg" alt="" />
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow animate__fadeInUp section_about_img mb-3">
+              <img src="./assets/img/about_bg_2.jpg" alt="" />
+            </div>
+
+            <div class="col-md-6 col-lg-4 wow animate__fadeInUp section_about_img mb-3">
+              <img src="./assets/img/about_bg_3.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="hero_center_page">
+            <p class="wow animate__fadeInUp section_about">
+              Our culinay tours are the only tours that benefits <br />
+              the local communities while rendering a <br />
+              sustainable travel expeience
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="hero_center_page">
-      <p>
-        Come and be part of our culinary tours, this fall & winter as we bring
-        in a glorious convocation of <b>travel and food in Manas, Assam</b>.
-      </p>
+    <section class="section section_about_founder wow animate__fadeInUp">
+      <div class="row g-0">
+        <div class="col-lg-5 col-md-12 founder_img p-4 p-md-0">
+          <img src="./assets/img/founder.png" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-12 p-4">
+          <h3 class="section_header wow animate__fadeInUp mb-4 text-white">
+            Founder Mitali Gogoi Dutta
+          </h3>
+          <p class="text text-white mb-4">
+            Our tours are led by our founder Mitali Gogoi Dutta, who accompanies
+            travellers in their sojourn to rustic yet beautiful locales. Mitali
+            has been working with different ethnic communities since 2017 by
+            training the womenfolk in soft skills, personality development,
+            hospitality, commercial cooking and also in designing an
+            economically sustainable entrepreneurship model for them. When
+            travellers join our tours, they directly benefit these humble
+            communities and their livelihoods. We try to make maximum efforts to
+            keep our tours as environment friendly and sustainable as possible.
+          </p>
+
+          <video
+            width="100%"
+            height="300"
+            controls
+            poster="./assets/img/video_thumbnail.jpg"
+          >
+            <source src="./assets/video/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </section>
 
     <section class="founder">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="row">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <!-- Founder image -->
+            <div class="col-md-6"></div>
 
-                    <!-- Founder image -->
-                    <div class="col-md-6"></div>
-
-                    <!-- Founder text -->
-                    <div class="col-md-6"></div>
-                </div>
-            </div>
+            <!-- Founder text -->
+            <div class="col-md-6"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->

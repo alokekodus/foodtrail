@@ -88,6 +88,14 @@
   z-index: 9;
 }
 
+.dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(194, 194, 194, 1);
+  box-shadow: 0px 0px 14px -1px rgba(194, 194, 194, 1);
+}
+
 .main-nav .nav-item:not(:last-child) {
   margin-right: 2rem;
 }
@@ -95,6 +103,16 @@
 .main-nav .nav-link {
   color: #111;
   font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.main-nav .nav-link:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.main-nav .dropdown-item {
+  font-size: 1.2rem;
 }
 
 .hero .hero_text {
@@ -340,3 +358,55 @@
   width: 5rem;
 }
 /*  ===================================== Floating whatsapp ends ===================================== */
+
+/*  ===================================== About page ================================================= */
+.hero_header {
+  height: 70vh !important;
+}
+
+.section .section_header {
+  margin-top: 8rem;
+}
+
+.hero_center_page {
+  margin-top: 35rem;
+}
+
+.hero_center_page p {
+  font-size: 3rem;
+  color: #fff;
+  font-family: Branch-regular;
+  text-align: center;
+}
+
+.section_about {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding-bottom: 10rem;
+}
+
+.section_about_img img {
+  width: 363px;
+  height: 256px;
+  object-fit: cover;
+}
+
+.section_about_founder {
+  background-color: var(--main-color);
+}
+
+.section_about_founder .founder_img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.section_about_founder .founder_img img {
+  height: 657px;
+  width: 461px;
+  object-fit: cover;
+}
+
+video[poster] {
+  object-fit: cover;
+}
