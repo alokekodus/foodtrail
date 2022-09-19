@@ -4,6 +4,11 @@
     padding-left: 1rem;
   }
 
+  .hero_header .main-nav #navbarSupportedContent{
+    background-color: #111;
+    padding-left: 1rem;
+  }
+
   .main-nav .nav-link:hover {
     color: unset;
     background-color: unset;
@@ -67,6 +72,12 @@
 
   .footer .top .footer_menu {
     flex-direction: column;
+  }
+
+  .section_manas{
+    padding: 20px 10px;
+    background: #fff !important;
+    height: unset;
   }
 }
 

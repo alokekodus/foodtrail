@@ -141,6 +141,14 @@
   bottom: -10rem;
   width: 20rem;
 }
+
+.hero_header {
+  height: 70vh !important;
+}
+
+.hero_header .main-nav .nav-link {
+  color: #fff;
+}
 /*  ===================================== Banner ends ===================================== */
 
 /*  ===================================== About ===================================== */
@@ -360,10 +368,6 @@
 /*  ===================================== Floating whatsapp ends ===================================== */
 
 /*  ===================================== About page ================================================= */
-.hero_header {
-  height: 70vh !important;
-}
-
 .section .section_header {
   margin-top: 8rem;
 }
@@ -409,4 +413,26 @@
 
 video[poster] {
   object-fit: cover;
+}
+
+
+/* ================================ Manas Page ================================ */
+.section_manas{
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 0;
+}
+
+.section_manas p,
+.section_about_center p{
+  text-align: center;
+}
+
+.section_about_center{
+  background-color: #f1b650;
+  padding: 5rem 0;
+}
+
+.carousel_image img{
+  width: 100%;
 }
