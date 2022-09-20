@@ -415,24 +415,104 @@ video[poster] {
   object-fit: cover;
 }
 
-
 /* ================================ Manas Page ================================ */
-.section_manas{
+.section_manas {
   width: 100%;
   height: 100vh;
   padding: 10rem 0;
 }
 
 .section_manas p,
-.section_about_center p{
+.section_about_center p {
   text-align: center;
 }
 
-.section_about_center{
+.section_about_center {
   background-color: #f1b650;
   padding: 5rem 0;
 }
 
-.carousel_image img{
+.carousel_image img {
   width: 100%;
+}
+
+/* =============================== Gallery page ============================ */
+.section_gallery {
+  padding: 50px 0;
+}
+
+.section_gallery .filter_buttons {
+  text-align: center;
+}
+
+.section_gallery .filter_buttons .btn {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.section_gallery .filter_buttons .btn:hover,
+.section_gallery .filter_buttons .btn.active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.section_gallery .item {
+  height: 25rem;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.section_gallery .single{
+  float: left;
+  display: none;
+}
+.section_gallery .item .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(1, 1, 1, 50%);
+  color: #fff;
+  z-index: 9;
+}
+
+.section_gallery .item .play-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section_gallery .item .play-btn img{
+  width: 5rem;
+}
+
+.section_gallery .item .title p{
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.section_gallery .gallery_items {
+  margin-top: 2rem;
+}
+
+.section_gallery .item img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.section_gallery .item img:hover {
+  transform: scale(1.1);
+}
+
+.section_gallery .show {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
 }

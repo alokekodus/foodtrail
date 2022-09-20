@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="./assets/vendor/bootstrap5/css/bootstrap.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
     <!-- Animate CSS -->
     <link rel="stylesheet" href="./assets/vendor/animate/animate.css" />
     <!-- Swiper 8 CSS -->
@@ -26,9 +32,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
 
-    <style>
-      
-    </style>
+    <style></style>
   </head>
 
   <body>
@@ -77,7 +81,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="manas.html">Manas National Park</a>
+                    <a class="dropdown-item" href="manas.html">Manas</a>
                   </li>
                 </ul>
               </li>
@@ -98,98 +102,131 @@
       <!-- Banner -->
       <img
         class="banner_img"
-        src="./assets/img/about_header.jpg"
+        src="./assets/img/manas_header.jpg"
         alt="Banner"
       />
 
       <!-- Center text -->
       <div class="hero_text">
         <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
-          About us
+          Gallery
         </h1>
       </div>
     </section>
 
-    <section
-      class="section section_about"
-      style="background: url(./assets/img/about_background.jpg)"
-    >
+    <section class="section section_gallery">
       <div class="container">
         <div class="col-md-12">
-          <h3 class="section_header wow animate__fadeInUp mb-4">
-            Culinary Tours - A sojourner's keepsake
-          </h3>
-
-          <p class="text wow animate__fadeInUp">
-            Food is an inseparable part of our lives and is undoubtedly one of
-            the best ways to get acquainted to a place! We at FSM Foodtrails
-            acknowledge that and offer a premium culinary experience for
-            travellers across the world. These tours are hosted in exquisite yet
-            humble locations of Northeast India which is abound with rich flora
-            &amp; fauna! From sourcing ingredients from the local farms to
-            touring local markets and learning to cook local dishes with the
-            natives, our culinary tours are a wholesome experience for the
-            culture-seeker in every traveller. Our tours make for enriching
-            anecdotes of culture and cuisine for travellers and the natives
-            alike.
-          </p>
-
-          <!-- Images -->
-          <div class="row mt-5">
-            <div class="col-md-6 col-lg-4 wow animate__fadeInUp section_about_img mb-3">
-              <img src="./assets/img/about_bg_1.jpg" alt="" />
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow animate__fadeInUp section_about_img mb-3">
-              <img src="./assets/img/about_bg_2.jpg" alt="" />
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow animate__fadeInUp section_about_img mb-3">
-              <img src="./assets/img/about_bg_3.jpg" alt="" />
-            </div>
+          <div id="filter_buttons" class="filter_buttons wow animate__fadeInUp">
+            <button class="btn active" onclick="filterSelection('all')">
+              Show all
+            </button>
+            <button class="btn" onclick="filterSelection('culinary_tours')">
+              Culinary Tours
+            </button>
+            <button class="btn" onclick="filterSelection('media_interviews')">
+              Media Interviews
+            </button>
           </div>
 
-          <div class="hero_center_page">
-            <p class="wow animate__fadeInUp section_about">
-              Our culinay tours are the only tours that benefits <br />
-              the local communities while rendering a <br />
-              sustainable travel expeience
-            </p>
+          <div class="gallery_items">
+            <div class="row">
+              <!-- Image -->
+              <div class="col-md-4 mb-3 single culinary_tours">
+                <div class="item">
+                  <a data-fancybox href="./assets/img/about2.png"
+                    ><img src="./assets/img/about2.png" alt=""
+                  /></a>
+
+                  <div class="title">
+                    <p class="text-center mb-0">Image title</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="col-md-4 mb-3 single media_interviews">
+                <div class="item">
+                  <a data-fancybox href="./assets/img/banner.png"
+                    ><img src="./assets/img/banner.png" alt=""
+                  /></a>
+
+                  <div class="title">
+                    <p class="text-center mb-0">Image title</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video -->
+              <div class="col-md-4 mb-3 single media_interviews">
+                <div class="item">
+                  <img src="./assets/img/banner.png" alt="" />
+
+                  <div class="title">
+                    <p class="text-center mb-0">Image title</p>
+                  </div>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-preload="false"
+                    href="https://www.youtube.com/watch?v=_a7RuVw6gp4"
+                  >
+                    <div class="play-btn">
+                      <img src="./assets/img/play-button.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="col-md-4 mb-3 single culinary_tours">
+                <div class="item">
+                  <a data-fancybox href="./assets/img/about2.png"
+                    ><img src="./assets/img/about2.png" alt=""
+                  /></a>
+
+                  <div class="title">
+                    <p class="text-center mb-0">Image title</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <div class="col-md-4 mb-3 single media_interviews">
+                <div class="item">
+                  <a data-fancybox href="./assets/img/banner.png"
+                    ><img src="./assets/img/banner.png" alt=""
+                  /></a>
+
+                  <div class="title">
+                    <p class="text-center mb-0">Image title</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video -->
+              <div class="col-md-4 mb-3 single media_interviews">
+                <div class="item">
+                  <img src="./assets/img/banner.png" alt="" />
+
+                  <div class="title">
+                    <p class="text-center mb-0">Image title</p>
+                  </div>
+                  <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-preload="false"
+                    href="https://www.youtube.com/watch?v=_a7RuVw6gp4"
+                  >
+                    <div class="play-btn">
+                      <img src="./assets/img/play-button.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section_about_founder wow animate__fadeInUp">
-      <div class="row g-0">
-        <div class="col-lg-5 col-md-12 founder_img p-4 p-md-0">
-          <img src="./assets/img/founder.png" alt="" />
-        </div>
-        <div class="col-lg-6 col-md-12 p-4">
-          <h3 class="section_header wow animate__fadeInUp mb-4 text-white">
-            Founder Mitali Gogoi Dutta
-          </h3>
-          <p class="text text-white mb-4">
-            Our tours are led by our founder Mitali Gogoi Dutta, who accompanies
-            travellers in their sojourn to rustic yet beautiful locales. Mitali
-            has been working with different ethnic communities since 2017 by
-            training the womenfolk in soft skills, personality development,
-            hospitality, commercial cooking and also in designing an
-            economically sustainable entrepreneurship model for them. When
-            travellers join our tours, they directly benefit these humble
-            communities and their livelihoods. We try to make maximum efforts to
-            keep our tours as environment friendly and sustainable as possible.
-          </p>
-
-          <video
-            width="100%"
-            height="300"
-            controls
-            poster="./assets/img/video_thumbnail.jpg"
-          >
-            <source src="./assets/video/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
         </div>
       </div>
     </section>
@@ -291,7 +328,10 @@
       wow.init();
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/filter.js"></script>
   </body>
 </html>
