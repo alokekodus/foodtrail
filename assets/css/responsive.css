@@ -24,7 +24,9 @@
 
   .hero .hero_text h1 {
     width: 100%;
-    font-size: 3rem;
+    font-size: 4.5rem;
+    text-align: left;
+    padding-left: 20px;
   }
 
   .about {
