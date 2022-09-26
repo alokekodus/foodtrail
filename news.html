@@ -10,12 +10,6 @@
       rel="stylesheet"
       href="./assets/vendor/bootstrap5/css/bootstrap.min.css"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-    />
-
     <!-- Animate CSS -->
     <link rel="stylesheet" href="./assets/vendor/animate/animate.css" />
     <!-- Swiper 8 CSS -->
@@ -81,7 +75,9 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="manas.html">Manas</a>
+                    <a class="dropdown-item" href="manas.html"
+                      >Manas</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -109,122 +105,94 @@
       <!-- Center text -->
       <div class="hero_text">
         <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
-          Gallery
+          News & Media
         </h1>
       </div>
     </section>
 
-    <section class="section section_gallery">
+    <!-- News & Media -->
+    <section class="news_and_media pb-5">
       <div class="container">
-        <div class="col-md-12">
-          <div id="filter_buttons" class="filter_buttons wow animate__fadeInUp">
-            <button class="btn active" onclick="filterSelection('all')">
-              Show all
-            </button>
-            <button class="btn" onclick="filterSelection('culinary_tours')">
-              Culinary Tours
-            </button>
-            <button class="btn" onclick="filterSelection('media_interviews')">
-              Media Interviews
-            </button>
-          </div>
 
-          <div class="gallery_items">
+        <div class="mt-5">
+          <div class="col-md-12 wow animate__fadeInUp" data-wow-delay="0.5s">
             <div class="row">
-              <!-- Image -->
-              <div class="col-md-4 mb-3 single culinary_tours">
-                <div class="item">
-                  <a data-fancybox href="./assets/img/about2.png"
-                    ><img src="./assets/img/about2.png" alt=""
-                  /></a>
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
 
-                  <div class="title">
-                    <p class="text-center mb-0">Image title</p>
+                    <a class="link" href="#">Find more...</a>
                   </div>
                 </div>
               </div>
 
-              <!-- Image -->
-              <div class="col-md-4 mb-3 single media_interviews">
-                <div class="item">
-                  <a data-fancybox href="./assets/img/banner.png"
-                    ><img src="./assets/img/banner.png" alt=""
-                  /></a>
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
 
-                  <div class="title">
-                    <p class="text-center mb-0">Image title</p>
+                    <a class="link" href="#">Find more...</a>
                   </div>
                 </div>
               </div>
 
-              <!-- Video -->
-              <div class="col-md-4 mb-3 single media_interviews">
-                <div class="item">
-                  <img src="./assets/img/banner.png" alt="" />
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
 
-                  <div class="title">
-                    <p class="text-center mb-0">Image title</p>
-                  </div>
-                  <a
-                    data-fancybox
-                    data-type="iframe"
-                    data-preload="false"
-                    href="https://www.youtube.com/watch?v=_a7RuVw6gp4"
-                  >
-                    <div class="play-btn">
-                      <img src="./assets/img/play-button.png" alt="" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Image -->
-              <div class="col-md-4 mb-3 single culinary_tours">
-                <div class="item">
-                  <a data-fancybox href="./assets/img/about2.png"
-                    ><img src="./assets/img/about2.png" alt=""
-                  /></a>
-
-                  <div class="title">
-                    <p class="text-center mb-0">Image title</p>
+                    <a class="link" href="#">Find more...</a>
                   </div>
                 </div>
               </div>
 
-              <!-- Image -->
-              <div class="col-md-4 mb-3 single media_interviews">
-                <div class="item">
-                  <a data-fancybox href="./assets/img/banner.png"
-                    ><img src="./assets/img/banner.png" alt=""
-                  /></a>
+              <div class="col-md-4 mb-4">
+                <div class="news_single">
+                  <img
+                    class="thumbnail"
+                    src="./assets/img/news.png"
+                    alt="News"
+                  />
+                  <div class="description">
+                    <p class="title">Lorem ipsum</p>
+                    <p class="small_desc mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
 
-                  <div class="title">
-                    <p class="text-center mb-0">Image title</p>
+                    <a class="link" href="#">Find more...</a>
                   </div>
                 </div>
               </div>
 
-              <!-- Video -->
-              <div class="col-md-4 mb-3 single media_interviews">
-                <div class="item">
-                  <img src="./assets/img/banner.png" alt="" />
-
-                  <div class="title">
-                    <p class="text-center mb-0">Image title</p>
-                  </div>
-                  <a
-                    data-fancybox
-                    data-type="iframe"
-                    data-preload="false"
-                    href="https://www.youtube.com/watch?v=_a7RuVw6gp4"
-                  >
-                    <div class="play-btn">
-                      <img src="./assets/img/play-button.png" alt="" />
-                    </div>
-                  </a>
-                </div>
-              </div>
-              
             </div>
           </div>
         </div>
@@ -328,10 +296,7 @@
       wow.init();
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/filter.js"></script>
   </body>
 </html>

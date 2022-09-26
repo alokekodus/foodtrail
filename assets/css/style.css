@@ -381,11 +381,12 @@
 
 /*  ===================================== About page ================================================= */
 .section .section_header {
-  margin-top: 8rem;
+  padding-top: 8rem;
 }
 
 .hero_center_page {
-  margin-top: 35rem;
+  background: url(../img/web.jpg);
+  padding: 15rem 0 20rem 0;
 }
 
 .hero_center_page p {
