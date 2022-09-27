@@ -1,10 +1,10 @@
 @media (max-width: 576px) {
-  .main-nav #navbarSupportedContent{
+  .main-nav #navbarSupportedContent {
     background-color: #fff;
     padding-left: 1rem;
   }
 
-  .hero_header .main-nav #navbarSupportedContent{
+  .hero_header .main-nav #navbarSupportedContent {
     background-color: #111;
     padding-left: 1rem;
   }
@@ -33,7 +33,7 @@
     padding-top: 5rem;
   }
 
-  .location{
+  .location {
     padding-bottom: 5rem;
   }
 
@@ -47,7 +47,7 @@
     height: 35rem;
   }
 
-  .hero_center_page{
+  .hero_center_page {
     margin-top: 5rem;
   }
 
@@ -55,16 +55,20 @@
     width: 100%;
   }
 
-  .section_about_founder .founder_img img{
+  .section_about_founder .founder_img img {
     width: 100%;
     height: auto;
   }
 
-  .section .section_header{
+  /* .section .section_header{
     margin-top: 5rem;
+  } */
+
+  .section .section_header {
+    padding-top: 4rem;
   }
 
-  .section_about_img img{
+  .section_about_img img {
     width: 100%;
   }
 
@@ -76,7 +80,7 @@
     flex-direction: column;
   }
 
-  .section_manas{
+  .section_manas {
     padding: 20px 10px;
     background: #fff !important;
     height: unset;
@@ -92,15 +96,15 @@
     height: 35rem;
   }
 
-  .section_about_img img{
+  .section_about_img img {
     width: 100%;
   }
 
-  .section .section_header{
+  /* .section .section_header{
     margin-top: 5rem;
-  }
+  } */
 
-  .section_about_founder .founder_img img{
+  .section_about_founder .founder_img img {
     height: auto;
     width: 400px;
   }
