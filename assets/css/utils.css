@@ -35,3 +35,7 @@ html {
   --secondary-color-2: #212e50;
   --border-radius: 1rem;
 }
+
+.border-rounded{
+  border-radius: 1rem;
+}

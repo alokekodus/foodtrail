@@ -85,6 +85,11 @@
     background: #fff !important;
     height: unset;
   }
+
+  .hero .hero_text .btn-book-now{
+    margin-right: auto;
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
