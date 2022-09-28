@@ -543,3 +543,23 @@ video[poster] {
   display: block;
   animation: fadeIn 0.3s ease-in;
 }
+
+
+/* ==================================== Contact page ========================= */
+.section_contact .inner{
+  background-color: var(--main-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section_contact .inner p{
+  text-align: center;
+  color: #fff;
+}
+
+.section_contact .inner p.title{
+  font-size: 2rem;
+}
