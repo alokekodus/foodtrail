@@ -271,6 +271,7 @@
 
 .news_and_media .news_single {
   position: relative;
+  height: 400px;
 }
 
 .news_and_media .news_single .description {
@@ -302,7 +303,7 @@
 
 .news_and_media .news_single .thumbnail {
   width: 100%;
-  height: 480;
+  height: 100%;
   object-fit: cover;
 }
 /*  ===================================== News and media ends ===================================== */
