@@ -560,6 +560,7 @@ video[poster] {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .section_contact .inner p{
