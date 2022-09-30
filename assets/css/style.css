@@ -46,6 +46,10 @@
   width: unset;
   font-size: 1.3rem;
 }
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  background-color: #111;
+}
 /*  ===================================== Common ends ===================================== */
 
 /*  ===================================== Loader ===================================== */
@@ -113,6 +117,8 @@
 
 .main-nav .dropdown-item {
   font-size: 1.2rem;
+  color: #fff;
+  background-color: #111;
 }
 
 .hero .hero_text {
@@ -139,7 +145,7 @@
 .hero .hero_text .btn-book-now {
   margin-top: 5rem;
   font-size: 1.5rem;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
   padding: 1rem 2rem;
   font-family: Branch-regular;
@@ -404,7 +410,6 @@
   color: #fff;
   font-family: Branch-regular;
   text-align: center;
-  font-weight: 700;
 }
 
 .section_about {
