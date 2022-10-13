@@ -49,6 +49,7 @@
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
   background-color: #111;
+  border-radius: 10px;
 }
 /*  ===================================== Common ends ===================================== */
 
@@ -105,7 +106,7 @@
 }
 
 .main-nav .nav-link {
-  color: #111;
+  color: #fff;
   font-size: 1.5rem;
   border-radius: 5px;
 }
@@ -118,7 +119,6 @@
 .main-nav .dropdown-item {
   font-size: 1.2rem;
   color: #fff;
-  background-color: #111;
 }
 
 .hero .hero_text {
@@ -180,14 +180,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 /*  ===================================== About ends ===================================== */
 
 /*  ===================================== Location ===================================== */
 .location {
-  padding-top: 0rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 20px 0;
+}
+
+.location .inner_1{
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0 40px;
+}
+
+.location .inner_image img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
 }
 
 .location_header {
@@ -196,17 +214,14 @@
 
 .location_tab {
   font-family: Branch-regular;
-  background-image: url(../img/location.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 4rem;
-  height: 400px;
 }
 
 .location_tab .text {
   font-size: 1.3rem;
   color: #fff;
-  width: 50rem;
 }
 
 .location_tab .location_title {
@@ -233,6 +248,18 @@
 /*  ===================================== Featured foods ===================================== */
 .featured_foods .image_slider_div .single {
   position: relative;
+}
+
+.featured_foods .image_slider_div .single::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: rgb(0,0,0);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(255,255,255,0) 100%);
+  border-radius: 10px;
 }
 
 .featured_foods .image_slider_div .single img {
@@ -278,6 +305,18 @@
 .news_and_media .news_single {
   position: relative;
   height: 400px;
+}
+
+.news_and_media .news_single::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: rgb(0,0,0);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(255,255,255,0) 100%);
+  border-radius: 10px;
 }
 
 .news_and_media .news_single .description {

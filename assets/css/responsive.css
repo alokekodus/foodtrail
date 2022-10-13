@@ -1,17 +1,24 @@
 @media (max-width: 576px) {
-  .main-nav #navbarSupportedContent {
+  /* .main-nav #navbarSupportedContent {
     background-color: #fff;
     padding-left: 1rem;
-  }
+  } */
 
-  .hero_header .main-nav #navbarSupportedContent {
+  .main-nav #navbarSupportedContent {
     background-color: #111;
     padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
   }
 
   .main-nav .nav-link:hover {
     color: unset;
     background-color: unset;
+  }
+
+  .main-nav .nav-link{
+    padding: 1.5rem 0;
   }
 
   .hero .banner_img_right {
@@ -31,6 +38,7 @@
 
   .about {
     padding-top: 5rem;
+    padding-bottom: 0;
   }
 
   .location {
@@ -93,6 +101,15 @@
 
   .section_contact_address{
     height: 50rem;
+  }
+
+  .section_contact .inner{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .location .inner_1{
+    padding: 30px 20px;
   }
 }
 
