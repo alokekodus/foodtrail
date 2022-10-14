@@ -91,6 +91,8 @@
   left: 0;
   width: 100%;
   z-index: 9;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.5522584033613445) 0%, rgba(255,255,255,0) 100%);
 }
 
 .dropdown-menu {
